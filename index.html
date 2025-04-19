@@ -1,113 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Language Translater</title>
-  </head>
-  <body>
-     <nav class="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinguaGo</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+
+
+  .content-text {
+    max-width: 50%;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left:70px;
+  }
+ .images img{
+	width:300px;
+	height:300px;
+	
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Floating Letters Background -->
+  <div class="floating-letters">
+    <span class="letter">अ</span>
+    <span class="letter">आ</span>
+    <span class="letter">इ</span>
+    <span class="letter">ई</span>
+    <span class="letter">उ</span>
+    <span class="letter">ऊ</span>
+    <span class="letter">ए</span>
+    <span class="letter">ऐ</span>
+    <span class="letter">A</span>
+    <span class="letter">C</span>
+    <span class="letter">D</span>
+    <span class="letter">E</span>
+    <span class="letter">F</span>
+    <span class="letter">G</span>
+    <span class="letter">H</span>
+    <span class="letter">I</span>
+    <span class="letter">అ</span>
+    <span class="letter">ఆ</span>
+    <span class="letter">ఇ</span>
+    <span class="letter">ఈ</span>
+    <span class="letter">ఉ</span>
+    <span class="letter">ఊ</span>
+    <span class="letter">ఋ</span>
+    <span class="letter">ణ</span>
+    
+    
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
     <div class="nav-brand">
       <img src="language.png" alt="LinguaGo" />
       <span>LinguaGo</span>
     </div>
+    <div class="nav-links">
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#what_we_do" class="nav-item">What We Do</a>
+      <a href="#how-to-use" class="nav-item">How to Use</a>
+      <a href="#team" class="nav-item">Team</a>
+      <a href="#about" class="nav-item">About</a>
+	 <div class="dropdown">
+    <a href="#" class="nav-item dropdown-toggle">Scope</a>
+    <div class="dropdown-menu">
+      <a href="course.html" target="_blank" class="dropdown-item">Course</a>
+      <a href="career.html" target="_blank" class="dropdown-item">Career</a>
+    </div>
+  </div>
+</div>
     <img src="https://leavesinternational.com/wp-content/uploads/2023/02/Vignan_logo.png" />
   </nav>
 
-    <div class="mode">
-      <label class="toggle" for="dark-mode-btn">
-        <div class="toggle-track">
-          <input type="checkbox" class="toggle-checkbox" id="dark-mode-btn" />
-          <span class="toggle-thumb"></span>
-          <img src="images/sun.png" alt="" />
-          <img src="images/moon.png" alt="" />
-        </div>
-      </label>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="image">
+    <img src="language.png" alt="LinguaGo" />
     </div>
-    <div class="container">
-      <div class="card input-wrapper">
-        <div class="from">
-          <span class="heading">From :</span>
-          <div class="dropdown-container" id="input-language">
-            <div class="dropdown-toggle">
-              <ion-icon name="globe-outline"></ion-icon>
-              <span class="selected" data-value="auto">Auto Detect</span>
-              <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <ul class="dropdown-menu">
-              <li class="option active">DropDown Menu Item 1</li>
-              <li class="option">DropDown Menu Item 2</li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-area">
-          <textarea
-            id="input-text"
-            cols="30"
-            rows="10"
-            placeholder="Enter your text here"
-          ></textarea>
-          <div class="chars"><span id="input-chars">0</span> / 5000</div>
-        </div>
-        <div class="card-bottom">
-          <p>Or choose your document!</p>
-          <label for="upload-document">
-            <span id="upload-title">Choose File</span>
-            <ion-icon name="cloud-upload-outline"></ion-icon>
-            <input type="file" id="upload-document" hidden />
-          </label>
-        </div>
-      </div>
+    <h1 class="letter-drop">
+  <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+  <span>t</span><span>o</span>
+  <span>L</span><span>i</span><span>n</span><span>g</span><span>u</span><span>a</span><span>G</span><span>o</span>
+</h1>
 
-      <div class="center">
-        <div class="swap-position">
-          <ion-icon name="swap-horizontal-outline"></ion-icon>
-        </div>
-      </div>
+    <p>Learn Something new</p>
+    <a href="main.html"><button class="location-btn">Translate</button></a>
+  </section>
 
-      <div class="card output-wrapper">
-        <div class="to">
-          <span class="heading">To :</span>
-          <div class="dropdown-container" id="output-language">
-            <div class="dropdown-toggle">
-              <ion-icon name="globe-outline"></ion-icon>
-              <span class="selected" data-value="en">Englsih</span>
-              <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <ul class="dropdown-menu">
-              <li class="option active">DropDown Menu Item 1</li>
-              <li class="option">DropDown Menu Item 2</li>
-            </ul>
-          </div>
-        </div>
-        <textarea
-          id="output-text"
-          cols="30"
-          rows="10"
-          placeholder="Translated text will appear here"
-          disabled
-        ></textarea>
-        <div class="card-bottom">
-          <p>Download as a document!</p>
-          <button id="download-btn">
-            <span>Download</span>
-            <ion-icon name="cloud-download-outline"></ion-icon>
-          </button>
+  <!-- About Section -->
+  <section id="about">
+	<section class="content-section">
+  <div class="content-text">
+    <h2>About Linguago</h2>
+    <p>
+     A Language Translator is a user-centric tool designed to break language barriers by converting text from one language to another while preserving meaning, context, and intent. It enhances communication, accessibility, and inclusivity by addressing the unique needs of diverse users.
+    
+    </p>
+  </div>
+<div class="images">
+  <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/271765442/original/bb01136eae5ae6db731e248a855075c84bfa25e6/translate-and-i-am-great-in-language-learning.png" alt="About Linguago" />
+</div>
+</section>
+      </section>
+
+  <!-- What We Do -->
+  <section id="what_we_do">
+    <h2>What Our Website Does</h2>
+    <ul>
+      <li>Simple input box for text Output box displaying translated text Language dropdown for selection</li>
+      <li>Upload PDFs, Word files, or text files. Translate content while preserving layout</li>
+      <li>Our website gives a clear vision for language translation</li>
+      <li>Makes people easy to learn Languages</li>
+      
+    </ul>
+    <img src="" alt="" />
+  </section>
+
+  <!-- How to Use -->
+  <section id="how-to-use">
+    <h2>How to Use the Website</h2>
+    <ol>
+      <li>Click the Translate bar</li>
+      <li>Select the Language that you are giving as input</li>
+      <li>Select the Language that needs to be translated into</li>
+      <li>If you want to give a document, then click on Document and Download the document</li>
+      <li>
+        Extra features included:
+        <ul>
+          <li>Shows the career path after B.Tech</li>
+          <li>Skills to be learned in Computer Science and Engineering</li>
+        </ul>
+      </li>
+    </ol>
+    <img src="" alt="" />
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h2 style="text-align: center; margin-bottom: 30px;">Our Team</h2>
+    <div class="team-container">
+      <div class="member-card">
+        <img src="gayatri.jpeg" alt="G.G.D.GAYATRI" />
+        <h3>G.G.D.GAYATRI</h3>
+        <p>24L35A0506</p>
+        <p>gayatrivarma7277@gmail.com</p>
+      </div>
+      <div class="member-card">
+        <img src="anitha.jpeg" alt="D.ANITHA SRI" />
+        <h3>D.ANITHA SRI</h3>
+        <p>23L31A0556</p>
+        <p>anithadesetti1242@gmail.com</p>
+      </div>
+      <div class="member-card">
+        <img src="madhu.jpeg" alt="D.MADHU PALLAVI" />
+        <h3>D.MADHU PALLAVI</h3>
+        <p>23L31A0552</p>
+        <p>madhupallavidasari@gmail.com</p>
+      </div>
+	<div class="member-card">
+        <img src="sowmya.jpeg" alt="B.SOWMYA" />
+        <h3>B.SOWMYA</h3>
+        <p>23L31A0515</p>
+        <p>sowmyab3555@gmail.com</p>
+      </div>
+      <div class="member-card">
+        <img src="moulika.jpeg" alt="B.MOULIKA" />
+        <h3>B.MOULIKA</h3>
+        <p>24L35A0502</p>
+        <p>badagalamoulika@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+	<img src="language.png" alt="LinguaGo" />
+        <span>LinguaGo</span>
+  
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#what_we_do">What We Do</a></li>
+          <li><a href="#how-to-use">How to Use</a></li>
+	  
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:gayatrivarma7277@gmail.com">gayatrivarma7277@gmail.com</a></p>
+        <p>Phone: +91-9494617277</p>
+        <p>Idea-lab, Vignan Institute of<br>Information Technology,<br>Duvvada, 530049</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/gnana-durga-gayatri-gottumukkala-ab0a0a233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://cdn.pixabay.com/photo/2017/10/04/11/58/linkedin-2815969_640.jpg" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
         </div>
       </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 DT&I project. All Rights Reserved.</p>
+	<p class="counter">This page has been viewed <span id="session-view-count">0</span> times during this session.</p>
+            <!-- Global counter -->
+            <p class="global-counter">Views: <span id="global-view-count">0</span></p>
+    </div>
+  </footer>
+	<script>
+       function updateSessionViewCount() {
+        let sessionCount = parseInt(localStorage.getItem('sessionViewCount')) || 0; 
+        sessionCount += 1;
+        localStorage.setItem('sessionViewCount', sessionCount); 
+        document.getElementById('session-view-count').textContent = sessionCount;
+    }
 
-    <script src="languages.js"></script>
-    <script src="script.js"></script>
-  </body>
+       function updateGlobalViewCount() {
+        // Get the global count from localStorage or initialize to 0 if not set
+        let globalCount = parseInt(localStorage.getItem('globalViewCount')) || 0;
+        globalCount += 1; // Increment the global count
+        localStorage.setItem('globalViewCount', globalCount); 
+        document.getElementById('global-view-count').textContent = globalCount;     }
+
+
+    window.onload = function() {
+        updateSessionViewCount(); 
+        updateGlobalViewCount();     }
+</script>
+
+</body>
 </html>
