@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAREER GUIDANCE</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #c6edc3;
+      background-attachment: fixed;
+    }
+
+
+    main {
+      padding: 20px;
+    }
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .course {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .course img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .course p {
+      margin: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .button1 {
+      border-radius: 5px;
+      background-color: #2c3e50;
+      border: none;
+      display: block;
+      margin: 10px auto;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      padding: 10px 20px;
+      width: 150px;
+      transition: all 0.4s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      text-decoration:none;
+    }
+
+    .button1 span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .button1::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: #34495e;
+      transition: left 0.3s ease;
+      z-index: 0;
+    }
+
+    .button1:hover::after {
+      left: 0;
+    }
+
+    .button1:hover span {
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .course {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .button1 {
+        width: 100%;
+        font-size: 14px;
+      }
+
+      .course p {
+        font-size: 12px;
+      }
+    }
+     .navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo, .college-logo {
+    width: 5 0px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar img{
+ 	width:50px;
+	height:50px;
+	border-radius:50%;
+}
+
+
+  </style>
+</head>
+<body>
+
+<main>
+	 <nav class="navbar">
+    <div class="nav-brand">
+      <img src="language.png" alt="LinguaGo" />
+      <span>LinguaGo</span>
+    </div>
+       <img src="https://leavesinternational.com/wp-content/uploads/2023/02/Vignan_logo.png" />
+  </nav>
+
+
+  <div class="courses">
+
+    <!-- Sample Course (Repeat this block for all other courses) -->
+    <div class="course">
+      <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/332025717/original/8a4ada41c20c29b4b45ede6ce08194820f705715/make-a-website-using-mui-chakra-ui-in-react-js.jpg" alt="Frontend Developer">
+      <p><b>Skills Required:</b> HTML, CSS, JavaScript, React, Angular</p>
+      <p><b>Companies:</b> Google, Microsoft, Amazon, Adobe, TCS, Infosys</p>
+      <p><b>Average Salary:</b> 10-25 LPA</p>
+      <p><b>Subjects to Learn:</b> Web Development, UI/UX, JavaScript Frameworks</p>
+      <a href="https://www.w3schools.com/html/" target="_blank">
+        <button class="button1"><span>CLICK ME!</span></button>
+      </a>
+    </div>
+	<div class="course">
+<div class="btn">
+<img src="https://smarterleaner.com/cdn/shop/files/Backend_Developer_ACsVD3G_1.jpg?v=1719470039&width=1445" alt="BACKEND DEVELOPER">
+<p><b>Skills Required:</b>Node.js,Java,Python,<br>PHP,SQL,MongoDB,APIs</p>
+<p><b>Companies:</b>Google,Microsoft,Amazon,IBM,<br>TCS,Infosys,Razorpay,Zoho</p>
+<p><b>Average Salary:</b>12-13 LPA</p>
+<p><b>Subjects to Learn:</b>BackendDevelopment,<br>DataBases,Serverside Architecture</p>
+<p><a href="https://www.crio.do/programs/software-development-fellowship-program/backend-track/?utm_source=google-ads-search&utm_medium=SD-Exact&utm_campaign=Backend&utm_content=733493067020&utm_term=best%20backend%20development%20course&utm_network=g&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHakNGm5GMC76Y06kb6nUJPVH6EvqcQiJDl5rrdWh8s47-PqaC_9TOJQaAjVUEALw_wcB" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://i0.wp.com/magnitia.com/blog/wp-content/uploads/2023/06/software-testing.jpg?resize=800%2C400&ssl=1" alt="TESTER">
+<p><b>Skills Required:</b> Manual Testing,Automation Testing,Selenium,JIRA,API Testing</p>
+<p><b>Companies:</b>Google,Microsoft,Amazon,IBM,<br>TCS,Infosys,Wipro,Cognizant</p>
+<p><b>Average Salary:</b>8-20 LPA</p>
+<p><b>Subjects to Learn:</b>Software Testing<br>,Automation Frameworks,Quality Assurance,Debugging</p>
+<p><a href="https://www.wetest.net/?utm_source=ga&utm_medium=GAA-2&utm_content=Function&utm_campaign=20954381657&utm_term=best%20website%20for%20software%20testing&utm_location=9184430&utm_matchtype=e&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHanETuIJLnQvhxVoHoigfkWf5HYKtafJsdS8MBB6yzpzGnguIYX0RmgaAqHiEALw_wcB" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://thumbs.dreamstime.com/b/data-analysis-business-intelligence-analytics-internet-technology-concept-171402768.jpg" alt="DATA ANALYST">
+<p><b>Skills Required:</b>SQL,Python,Excel,PowerBI,<br>Tableau,Statistics,Data Visualization</p>
+<p><b>Companies:</b>Google,Microsoft,Amazon,Zoho,<br>TCS,Infosys,Razorpay</p>
+<p><b>Average Salary:</b>8-10 LPA</p>
+<p><b>Subjects to Learn:</b>Statistics,Probability,<br>SQL,Data Analysis,Machine Learning Basics</p>
+<p><a href="https://www.almabetter.com/courses/full-stack-data-science?utm_source=Inorganic_google&utm_medium=data_science&utm_campaign=DataScience|Search|Generic2|LeadGen&utm_content=Data-Science_Query_LowC_data-science-websites_Phrase&utm_term=text_ad&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHak1j1vjcXv_NyzvL-NSMV7CoIChiYsfzwTjyQlfYYXXXjfBVeZ0kcEaAgJjEALw_wcB" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://publishthispost.com/wp-content/uploads/2021/05/Data-Scientist.jpg" alt="DATA SCIENTIST">
+<p><b>Skills Required:</b>Python,R,SQL,Machine Learning,Deep Learning,AI,TensorFlow</p>
+<p><b>Companies:</b>Google,Microsoft,Amazon,IBM,TCS,<br>Infosys,Wipro,Zoho,Adobe</p>
+<p><b>Average Salary:</b>12-25 LPA</p>
+<p><b>Subjects to Learn:</b>,Machine Learning,AI,Statistics,Probability,Linear Algebra</p>
+<p><a href="https://www.simplilearn.com/tutorials/machine-learning-tutorial/machine-learning-platforms" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://blog.hrflow.ai/content/images/size/w1200/2020/04/Full-Stack-Developer.jpg" alt="FULL STACK DEVELOPER">
+<p><b>SKILLS REQUIRED:</b>JavaScript,React,Java,<br>Angular,PHP,SQL,MongoDB,APIs</p>
+<p><b>Companies:</b>Google,Microsoft,Amazon,Apple,<br>Netflix,LinkedIn,Meta</p>
+<p><b>Average Salary:</b>48-68 LPA</p>
+<p><b>Subjects to Learn:</b>Frontend,Backend,Databases,<br>API's,Version Control.</p>
+<p><a href="https://www.geeksforgeeks.org/what-is-full-stack-development/" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://www.uxdesigninstitute.com/blog/wp-content/uploads/2024/11/101_UX_vs_UI_illustration_blog-1.png" alt="UI/UX">
+<p><b>Skills Required:</b>Wireframing & Prototyping,Visual Design,User research & testing,HTML & CSS</p>
+<p><b>Companies:</b>Toptal,Flipkart,Zomato,Paytm,<br>ThoughtWorks,Razorpay,Swiggy</p>
+<p><b>Average Salary:</b>3-5 LPA</p>
+<p><b>Subjects to Learn:</b>UI/UX Design Principles,Wireframing & Prototyping,User Research & Testing,Visual Design,Frontend Development</p>
+<p><a href="https://www.figma.com/ux-design-tool/" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt8ffb90a2f64bacfa/6776f4544b281ca5e2bc465a/cybersecurity_NicoElNino-AlamyStockPhoto.jpg" alt="CYBER SECURITY">
+<p><b>Skills Required:</b>Network Security,Cloud Security,FireWalls,SIEM,Risk Assesment</p>
+<p><b>Companies:</b>Google,Microsoft,Amazon,IBM,TCS,<br>Cisco,HCLTech</p>
+<p><b>Average Salary:</b>10-20 LPA</p>
+<p><b>Subjects to Learn:</b>Cryptography,Network Security,Ethical Hacking,Cyber Law</p>
+<p><a href="https://www.coursera.org/courses?query=cybersecurity" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://www.baker.edu/wp-content/uploads/how-to-become-a-game-developer.jpg" alt="GAME DEVELOPER">
+<p><b>Skills Required:</b>Front-End,Back-End,Databases,<br>Version control,API's</p>
+<p><b>Companies:</b>,zomato,TCS,Infosys,Wipro,Cognizant,<br>Deloitte,Flipkart,Amazon,Accenture</p>
+<p><b>Average Salary:</b>5-8 LPA</p>
+<p><b>Subjects to Learn:</b>Web Development,Verion Control(Git),API's,UI/UX principles,DataBases,OOP,Cloud computing & DevOps</p>
+<p><a href="https://gdevelop.io/" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220609003826/Software-Developer-Salary-Skills-and-Future-Career.png" alt="SOFTWARE DEVELOPER">
+<p><b>Skills Required:</b>DSA,OOP,Version control,Software Development Methodologies</p>
+<p><b>Companies:</b>TCS,Infosys,Wipro,Cognizant,<br>Flipkart,Amazon,Accenture</p>
+<p><b>Average Salary:</b>4-7 LPA</p>
+<p><b>Subjects to Learn:</b>Web Development,Data Structure and algorithims,DataBases,Object Oriented Programming,SE Principles</p>
+<p><a href="https://www.coursera.org/browse/computer-science/software-development?msockid=02473148f13c604233d424d2f04361c7" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://cdn.prod.website-files.com/5b6df8bb681f89c158b48f6b/5d5bb5c4ea4b9e0a7a1fac79_io-network-engineer.jpg" alt="NETWORK ENGINEER">
+<p><b>Skills Required:</b>Networking Protocols,Routine switching,Network Security,Wireless Networking,Troubleshooting,Virtualization,Cloud Networking</p>
+<p><b>Companies:</b>Cisco Systems,Wipro,TCS,Infosys,HCL Technologies,IBM,Accenture</p>
+<p><b>Average Salary:</b>5-10 LPA</p>
+<p><b>Subjects to Learn:</b>Networking Protocols,Routine switching, Network Security,Wireless Networking,Troubleshooting, Virtualization,Cloud Networking</p>
+<p><a href="https://artofnetworkengineering.com/" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+
+</div>
+</div>
+<div class="course">
+<div class="btn">
+<img src="https://images.shiksha.com/mediadata/images/articles/1731057277phpkeaGof.jpeg" alt="SOFTWARE ARCHITECT">
+<p><b>Skills Required:</b>Programming, System Design, Cloud Computing, Microservices, DevOps, Databases, Cybersecurity.</p>
+<p><b>Companies:</b>Google, Microsoft, Amazon, Apple, AdobeTCS, Infosys, Wipro, HCL, Tech Mahindra IBM, Deloitte, Accenture</p>
+<p><b>Average Salary:</b>20-35 LPA</p>
+<p><b>Subjects to Learn:</b>Computer Science Fundamentals,Software Engineering Principles,Design Patterns & Software Architecture,Cloud Computing & Infrastructure</p>
+<p><a href="https://learnsoftwarearchitecture.com/" target="_blank"><button class="button1" style="vertical-align:middle"><span>CLICK ME!</span></button></a>
+
+</div>
+</div>
+
+
+  </div>
+</main>
+
+</body>
+</html>
