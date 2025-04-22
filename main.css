@@ -410,69 +410,7 @@ footer {
   color: #aaa;
 }
 /* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .content-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .content-text {
-    max-width: 100%;
-    margin-left: 0;
-  }
-
-  .images img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-  }
-
-  .team-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .member-card {
-    width: 90%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-section {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-
-  .hero h1 {
-    font-size: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero img {
-    width: 80%;
-    height: auto;
-  }
-}
 .shloka-scroll {
   overflow: hidden;
   white-space: nowrap;
@@ -496,5 +434,82 @@ footer {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+    align-items: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* Hero Section */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  /* Content Section */
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-text {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .images img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* Team Section */
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .footer-container {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
   }
 }
