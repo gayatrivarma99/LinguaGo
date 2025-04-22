@@ -410,9 +410,10 @@ footer {
   color: #aaa;
 }
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 10px;
   }
@@ -473,6 +474,7 @@ footer {
     height: auto;
   }
 }
+
 .shloka-scroll {
   overflow: hidden;
   white-space: nowrap;
